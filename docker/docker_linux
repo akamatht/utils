@@ -1,0 +1,11 @@
+FROM amazonlinux:latest
+
+RUN yum install -y python3.7 gcc openssl-devel bzip2-devel libffi-devel tar curl net-tools nmap wget whois git git-man apt-file python-pip python-dev telnet xterm util-linux sshfs tree  coreutils build-essential zip unzip haproxy ansible nethogs iftop ranger mitmproxy ant ascii asciinema asciidoc  docker at cron expect-dev  daemon fslint pkg-config sudo tcpd time tree  postgresql-client graphviz tcpreplay tcpreen tcpspy tcputils bashdb gitg git-repairdateutils  dnstracer x11-utils
+
+RUN yum install -y python-pip git
+
+WORKDIR /opt
+
+ENV JAVA_HOME=/usr
+
+CMD ["/bin/bash"]
